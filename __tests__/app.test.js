@@ -117,4 +117,19 @@ describe("app", () => {
     expect(navLink).toBeTruthy();
     expect(navLink.className).toMatch(/active/);
   });
+
+
+  it("should render an error message if stories can't be fetched", async () => {
+    global.fetch.mockRejectedValueOnce(new Error('Some random error'));
+
+    require("../app");
+
+    await waitForElement("title");
+
+    const storyLinks = document.getElementsByClassName("storylink");
+    expect(storyLinks).toHaveLength(0);
+
+    const errorMessage = document.getElementsByClassName("title")[0];
+    expect(errorMessage.innerHTML).toMatch(/Oops, couldn't fetch stories/);
+  });
 });
