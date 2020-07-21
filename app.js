@@ -77,7 +77,7 @@
     const start = currentPage * RECORDS_PER_PAGE;
     const end = start + RECORDS_PER_PAGE;
 
-    const visibleStories = [...storiesList.slice(start, end), "test"];
+    const visibleStories = storiesList.slice(start, end);
 
     const stories = await Promise.all(
       visibleStories.map((storyId) =>

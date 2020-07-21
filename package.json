@@ -1,0 +1,22 @@
+{
+  "name": "front-end-code-challenge",
+  "version": "1.0.0",
+  "description": "Thank you for taking your time and agreeing to take this challenge as part of our recruitment process. We understand that sometimes it can be hard to find enough time to dedicate yourself properly to this type of activity, so if for any reason you have problems related to it let us know and communicate properly what you've done and what you were still planning to do if you had more time.",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eweihs/front-end-code-challenge.git"
+  },
+  "author": "Erik Weihs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eweihs/front-end-code-challenge/issues"
+  },
+  "homepage": "https://github.com/eweihs/front-end-code-challenge#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
