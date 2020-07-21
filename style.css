@@ -1,0 +1,85 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+table {
+  width: 85%;
+  margin: auto;
+}
+
+td {
+  font-size: 14px;
+  color: #828282;
+}
+
+tr.spacer {
+  height: 10px;
+}
+
+#footer {
+  border-top: 2px solid #ff6600;
+  line-height: 5em;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 14px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 1px;
+  margin: 0 5px;
+}
+
+.brand {
+  margin-right: 5px;
+}
+
+.pagetop {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8em;
+}
+
+.pagetop a:visited {
+  color: #000000;
+}
+
+.pagetop a.active {
+  color: #ffffff;
+}
+
+.title {
+  padding: 2px;
+}
+
+.storylink {
+  display: block;
+}
+
+.subtext {
+  font-size: 10px;
+  color: #828282;
+}
+
+@media only screen and (max-width: 750px) {
+  table {
+    width: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  .brand {
+    display: block;
+  }
+  .pagetop {
+    display: block;
+    margin: 3px 5px;
+    font-size: 12px;
+    line-height: 1.4em;
+  }
+}

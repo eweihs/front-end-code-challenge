@@ -1,12 +1,47 @@
 <html>
-	<head>
-		<title>Werkspot Hacker News</title>
-		<link rel="stylesheet" href="./style.css">
-	</head>
-	<body>
-		<div id="app">
-			<ul class="list"></ul>
-		</div>
-		<script src="./app.js"></script>
-	</body>
+  <head>
+    <title>Werkspot Hacker News</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" bgcolor="#f6f6ef">
+      <thead bgcolor="#ff6600">
+        <tr>
+          <th style="width: 18px; padding-right: 4px;">
+            <span>
+              <a class="logo" href="/">W</a>
+            </span>
+          </th>
+          <th align="left">
+            <span class="pagetop">
+              <b class="brand"><a href="/">Werkspot Hacker News</a></b>
+              <span class="topsel"
+                ><a class="topstories" href="/?t=topstories"
+                  >topstories</a
+                ></span
+              >
+              | <a class="newstories" href="/?t=newstories">newstories</a> |
+              <a class="beststories" href="/?t=beststories">beststories</a>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="list">
+        <tr class="spacer"></tr>
+        <tr>
+          <td></td>
+          <td>Loading stories...</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="spacer"></tr>
+        <tr>
+          <td id="footer" align="center" colspan="2">
+            Front End Code Challenge by Erik Weihs
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="./app.js"></script>
+  </body>
 </html>
